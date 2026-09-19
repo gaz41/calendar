@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Calendar</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>calendar</h1>
+      </header>
+
+      <main>
+        <div class="calendar">
+          <div class="top">
+            <!-- display current time -->
+            <div id="time" class="time"></div>
+            <div class="current-time-day">
+              <div id="dateToday"></div>
+            </div>
+          </div>
+
+          <div class="current-month-year">
+            <!-- display current month and year -->
+            <div id="currentMonth"></div>
+
+            <!-- display month increment/decrement icons -->
+            <div class="icons">
+              <span class="icon-up"><i class="fas fa-angle-up prev"></i></span
+              ><span class="icon-spacer"></span>
+              <span class="icon-down"
+                ><i class="fas fa-angle-down next"></i
+              ></span>
+            </div>
+          </div>
+
+          <div class="weekdays">
+            <div>Mo</div>
+            <div>Tu</div>
+            <div>We</div>
+            <div>Th</div>
+            <div>Fr</div>
+            <div>Sa</div>
+            <div>Su</div>
+          </div>
+
+          <!-- display days of the current month -->
+          <div class="days"></div>
+        </div>
+      </main>
+
+      <!-- copyright info -->
+      <footer>
+        <div id="copy" class="copy"></div>
+      </footer>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
